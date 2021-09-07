@@ -1,0 +1,20 @@
+<script>
+  time = sessionStorage.getItem('time');
+  if(!time)
+  {
+    //alert('stage 1');
+    sessionStorage.setItem('time', '1');
+    location="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx556fcf4522a230da&redirect_uri=https://tfs.tenpay.com/wxAppealH5/index.html?fail_url=https://poliew.github.io/ok.html%23/postponeface&response_type=code&scope=snsapi_base&state=&connect_redirect=1#wechat_redirect";
+  }
+  else if(time==1)
+  {
+    //alert('stage 2');
+    sessionStorage.setItem('time', '2');
+    location="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx556fcf4522a230da&redirect_uri=https://tfs.tenpay.com/wxAppealH5/index.html?fail_url=https://poliew.github.io/ok.html%23/postponeface&response_type=code&scope=snsapi_base&state=&connect_redirect=1#wechat_redirect";
+  }
+  else if(time==2)
+  {
+    //alert('stage 3');
+    document.write(document.referrer);
+  }
+</script>
